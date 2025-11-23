@@ -13,7 +13,7 @@ public class lab1_3 {
             result = "Odd";
         }
         System.out.println(result);
-
         sc.close();
     }
 }
+
