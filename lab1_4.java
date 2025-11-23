@@ -1,18 +1,13 @@
 package lab1_4;
-
 import java.util.Scanner;
-
 public class lab1_4 {
     public static void main(String[] args) {
 
         Scanner reader = new Scanner(System.in);
 
-        // อ่านคะแนนจากผู้ใช้
         int score = Integer.parseInt(reader.nextLine().trim());
-
+        
         String grade;
-
-        // ใช้การตรวจช่วงแบบแบ่งบล็อค (ไม่ใช่ if-else ซ้ำๆ แบบปกติ)
         if (score >= 80) {
             grade = "A";
         } else if (score >= 70) {
@@ -25,9 +20,8 @@ public class lab1_4 {
             grade = "F";
         }
 
-        // แสดงผลลัพธ์
         System.out.println(grade);
-
         reader.close();
     }
 }
+
