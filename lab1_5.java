@@ -16,3 +16,4 @@ public class lab1_5 {
         sc.close();
  }
 }
+
