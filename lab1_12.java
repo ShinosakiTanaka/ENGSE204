@@ -1,7 +1,5 @@
 package lab1_12;
-
 import java.util.Scanner;
-
 public class lab1_12 {
 
     public static void main(String[] args) {
@@ -36,4 +34,5 @@ public class lab1_12 {
         sc.close();
     }
 }
+
 
