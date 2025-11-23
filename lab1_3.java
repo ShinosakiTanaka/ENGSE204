@@ -1,21 +1,19 @@
 package lab1_3;
-
 import java.util.Scanner;
-
 public class lab1_3 {
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
 
-        Scanner input = new Scanner(System.in);
+        int number = sc.nextInt();
 
-        // อ่านค่าบรรทัดเดียวแล้วแปลงเป็นจำนวนเต็ม
-        int number = Integer.parseInt(input.nextLine().trim());
-
-        // เช็คว่าเลขคู่หรือคี่
-        String result = (number % 2 == 0) ? "Even" : "Odd";
-
-        // แสดงผลลัพธ์
+        String result;
+        if (number % 2 == 0) {
+            result = "Even";
+        } else {
+            result = "Odd";
+        }
         System.out.println(result);
 
-        input.close();
+        sc.close();
     }
 }
