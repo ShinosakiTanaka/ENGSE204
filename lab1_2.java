@@ -5,19 +5,13 @@ import java.util.Scanner;
 public class lab1_2 {
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner input = new Scanner(System.in);
 
-        // รับความกว้าง
-        double width = sc.nextDouble();
-        // รับความสูง
-        double height = sc.nextDouble();
+        double width  = input.nextDouble();
+        double height = input.nextDouble();
+        double rectangleArea = width * height;
 
-        // คำนวณพื้นที่
-        double area = width * height;
-
-        // แสดงผล
-        System.out.println(area);
-
-        sc.close();   // <- เพิ่มบรรทัดนี้ เพื่อลด Warning
+        System.out.println(rectangleArea);
+        input.close();
     }
 }
